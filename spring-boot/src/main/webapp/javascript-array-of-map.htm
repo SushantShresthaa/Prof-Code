@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<title>function Expression</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  <header style="height: 30px;background-color: #070833;">
+  </header>
+  <div class="container">
+  		<h1>Function Expression or Anonymous Function</h1>
+  		<img src="img/html.png" style="height: 160px;"/>
+  		<hr/><hr/>
+  		<div class="form-group">
+  				 <img src="img/test-passed.png" id="resultImage" style="height: 120px;"/>
+  				<span id="resultspan" style="background-color: yellow;"></span>
+  		</div>	
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <script>
+
+
+     //here customers is not normal variable... it array object which holds many customers object
+	  var customers=[
+	          	  		  {name:"nagendra",email:"nagen@gmail.com",mobile:9292922},
+	          	  	 	  {name:"robert",email:"robert@gmail.com",mobile:345345}	,
+	          	  	      {name:"jhon",email:"jhon@gmail.com",mobile:345345},
+	          	  	      {name:"nagendra",email:"mocha@gmail.com",mobile:22333},
+		          	  ];
+
+	     var resultArray=customers.map(function(customer){
+					return {pname:customer.name.toUpperCase(),
+						email:customer.email};
+		     });
+		console.log(resultArray);
+	
+	//show();
+  </script>
+</body>
+</html>
